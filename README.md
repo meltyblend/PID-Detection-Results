@@ -31,10 +31,10 @@ T5 adds sharp high-res zoom crops and stroke thinning. T6 adds copy-paste of equ
 **Methods**
 - S. Ren, K. He, R. Girshick, J. Sun. *Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks.* NeurIPS 2015. [arXiv:1506.01497](https://arxiv.org/abs/1506.01497). This is the detector architecture.
 - G. Ghiasi et al. *Simple Copy-Paste is a Strong Data Augmentation Method for Instance Segmentation.* CVPR 2021. [arXiv:2012.07177](https://arxiv.org/abs/2012.07177). The basis for T6 copy-paste.
-- Prasad et al. *SynthPID.* CVPR 2026 Workshops. [arXiv:2604.16513](https://arxiv.org/abs/2604.16513). Informed the work on the gap between synthetic and real sheets (T5 stroke thinning).
-- F. C. Akyon et al. *Slicing Aided Hyper Inference and Fine-tuning for Small Object Detection* (SAHI). ICIP 2022. [arXiv:2202.06934](https://arxiv.org/abs/2202.06934). Informed the zoom-crop training.
-- M. Gupta, C. Wei, T. Czerniawski. *Semi-supervised symbol detection for piping and instrumentation drawings.* Automation in Construction 159, 2024. [Code](https://github.com/mgupta70/PID_Symbol_Detection). Informed the plan for real-sheet labels (T7).
-- I. Robinson et al. *RF-DETR.* ICLR 2026. [arXiv:2511.09554](https://arxiv.org/abs/2511.09554). Considered as an alternative detector.
+- Prasad et al. *SynthPID.* CVPR 2026 Workshops. [arXiv:2604.16513](https://arxiv.org/abs/2604.16513). Its mean ± sd over repeated runs was the model for the evaluation protocol (T1).
+- F. C. Akyon et al. *Slicing Aided Hyper Inference and Fine-tuning for Small Object Detection* (SAHI). ICIP 2022. [arXiv:2202.06934](https://arxiv.org/abs/2202.06934). Supported using full-image inference for large objects; sliced inference is planned for the small-symbol model.
+- M. Gupta, C. Wei, T. Czerniawski. *Semi-supervised symbol detection for piping and instrumentation drawings.* Automation in Construction 159, 2024. [Code](https://github.com/mgupta70/PID_Symbol_Detection). Motivated the class-agnostic AP diagnostic (T1).
+- I. Robinson et al. *RF-DETR.* ICLR 2026. [arXiv:2511.09554](https://arxiv.org/abs/2511.09554). Considered as an alternative detector but not adopted, because its published configs top out at about 880 px input.
 
 **Software**
 - PyTorch / torchvision 0.29: [Faster R-CNN (ResNet-50-FPN v2)](https://docs.pytorch.org/vision/stable/models/faster_rcnn.html) and transforms v2.
