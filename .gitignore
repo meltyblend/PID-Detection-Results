@@ -6,3 +6,7 @@
 !notebook.ipynb
 !results.ipynb
 !report.pdf
+!PID_test_pngs/
+!PID_test_pngs/*
+!images/
+!images/pid_big.png

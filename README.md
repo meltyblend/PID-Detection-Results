@@ -11,6 +11,7 @@ The model is a torchvision Faster R-CNN (ResNet-50-FPN v2, COCO-pretrained). It 
 | `report.pdf` | 2-page progress report: methods, results with confidence intervals, limitations, sources |
 | `results.ipynb` | Results notebook: per-class AP50, seed comparisons, predictions on outside drawings |
 | `notebook.ipynb` | Main project notebook |
+| `PID_test_pngs/`, `images/pid_big.png` | The five outside test drawings used in `results.ipynb` (no ground-truth labels) |
 
 ## Headline results (AP50, 12 real test sheets)
 
@@ -26,7 +27,7 @@ T5 adds sharp high-res zoom crops and stroke thinning. T6 adds copy-paste of equ
 
 **Data**
 - J. M. Stürmer, M. Graumann, T. Koch. *From Engineering Diagrams to Graphs: Digitizing P&IDs with Transformers* (PID2Graph). IEEE DSAA 2025. [arXiv:2411.13929](https://arxiv.org/abs/2411.13929). Dataset: [Zenodo record 14803338](https://zenodo.org/records/14803338). This is the source of the synthetic training and validation sheets and of the 12 real OPEN100 test sheets.
-- The five outside drawings in `results.ipynb` (ethanol PFD, piping-diagram-2, OSHA PFD, processing-pid-rev, pid_big) are public example images found online. They have no ground-truth labels.
+- The five outside drawings in `results.ipynb` (ethanol PFD, piping-diagram-2, OSHA PFD, processing-pid-rev, pid_big) are public example images found online and are included in `PID_test_pngs/` and `images/`. They have no ground-truth labels and remain the property of their original owners.
 
 **Methods**
 - S. Ren, K. He, R. Girshick, J. Sun. *Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks.* NeurIPS 2015. [arXiv:1506.01497](https://arxiv.org/abs/1506.01497). This is the detector architecture.
